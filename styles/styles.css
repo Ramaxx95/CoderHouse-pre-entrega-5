@@ -139,6 +139,11 @@ figure{
     padding: 1rem;
 }
 
+.producto:hover{
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 20px var(--color-acento);
+}
+
 @media (min-width: 1024px){
     .contenedor-productos{
         grid-template-columns: repeat(2, 1fr);
