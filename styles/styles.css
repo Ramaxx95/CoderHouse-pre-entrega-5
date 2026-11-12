@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Ultra&display=swap');
+
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* DECLARACION DE VARIABLES */
+:root{
+    --color-fondo: #f5f570e0;
+    --color-secundario: #f5c66ee0;
+    --color-acento: #006781fb;
+}
+
+/* HEADER */
+.imagen-logo{
+    width: 5rem;
+    height: 5rem;
+}
+
+.indice{
+    background-color: var(--color-secundario);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    gap: 1rem;
+}
+
+.indice ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+@media (min-width: 1024px){
+    .indice{
+        background-color: var(--color-secundario);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0rem 1rem;
+    }
+
+    .indice ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+.item-indice{
+    color: var(--color-acento);
+    text-decoration: none;
+}
+
+/* PÁGINA PRINCIPAL */
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Ultra, sans-serif;
+    font-weight: 200;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+    grid-area: h2;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+main{
+    padding: 20px;
+}
+
+ul{
+    grid-area: ul;
+}
+
+body{
+    font-family: DynaPuff, sans-serif;
+    background-color: var(--color-fondo);
+    font-weight: 100;
+}
+
+section{
+    padding: 20px;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    grid-area: figure;
+}
+
+img{
+    grid-area: img;
+}
+
+.grid-pag-principal{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "h2"
+        "ul"
+        "figure";
+}
+
+/* Agregamos esto para achicar la imagen en tamaño mobile*/
+.grid-pag-principal img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 1024px){
+    .grid-pag-principal{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "h2 h2 "
+            "ul ul"
+            "figure figure";
+    }
+
+    .grid-pag-principal img{
+        width: 75%;
+        height: 75%;
+    }
+}
+
+/* CATÁLOGO/ACCESORIOS */
+.imagen-producto{
+    width: 10rem;
+    height: 10rem;
+}
+
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secundario);
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+@media (min-width: 1024px){
+    .contenedor-productos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "producto1 producto2";
+        gap: 1rem;
+    }
+
+    .producto-1{
+        grid-area: producto1;
+    }
+
+    .producto-2{
+        grid-area: producto2;
+    }
+}
+
+/* FAQ */
+.pregunta{
+    font-weight: 700;
+    margin: 10px;
+}
+
+.respuesta{
+    margin: 0px 20px 20px;
+}
+
+/* CONTACTO */
+.enfasis{
+    font-weight: 700;
+}
+
+.imagen-decoracion{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "ul"
+        "figure";
+}
+
+@media (min-width: 1024px){
+    .imagen-decoracion{
+        width: 75%;
+        height: 75%;
+    }
+
+    .grid-contacto{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "ul ul"
+            "figure figure";
+    }
+
+    .grid-contacto ul{
+        padding: 1rem;
+    }
+
+    .grid-contacto li{
+        padding: 0.5rem 0rem;
+    }
+}
+
+/* FOOTER */
+footer{
+    background-color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
