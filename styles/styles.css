@@ -11,6 +11,7 @@
     --color-fondo: #f5f570e0;
     --color-secundario: #f5c66ee0;
     --color-acento: #006781fb;
+    --color-hover: #2aa6c5fb;
 }
 
 /* HEADER */
@@ -19,49 +20,21 @@
     height: 5rem;
 }
 
-.indice{
-    background-color: var(--color-secundario);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1rem;
-    gap: 1rem;
-}
-
-.indice ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-@media (min-width: 1024px){
-    .indice{
-        background-color: var(--color-secundario);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0rem 1rem;
-    }
-
-    .indice ul{
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-    }
-}
-
-.item-indice{
+.nav-link{
     color: var(--color-acento);
-    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: var(--color-hover);
+}
+
+.navbar-nav .nav-link.active{
+    color: var(--color-acento);
+    text-decoration: underline;
+}
+
+.navbar{
+    background-color: var(--color-secundario);
 }
 
 /* PÁGINA PRINCIPAL */

@@ -10,16 +10,31 @@
     </head>
     <body>
         <header>
-            <nav class="indice">
-                <a href="../index.html">
-                    <img src="../imgs/logo.png" alt="Logo de la tienda" class="imagen-logo">
-                </a>
-                <ul>
-                    <li><a href="./catalogo.html" class="item-indice">Catálogo</a></li>
-                    <li><a href="./accesorios.html" class="item-indice">Accesorios</a></li>
-                    <li><a href="./contacto.html" class="item-indice">Contacto</a></li>
-                    <li><a href="./faq.html" class="item-indice">FAQs</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-sm">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../imgs/logo.png" alt="Logo de la tienda" class="imagen-logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarIndices" aria-controls="navbarIndices" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarIndices">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./catalogo.html">Catálogo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./accesorios.html">Accesorios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./faq.html">FAQs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
         <main>
