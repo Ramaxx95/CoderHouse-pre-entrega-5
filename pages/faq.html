@@ -42,14 +42,32 @@
             <p>Vea aquí nuestras preguntas más recibidas.</p>
             <section>
                 <h2>Preguntas</h2>
-                <article>
-                    <p class="pregunta">¿Hacen envios?</p>
-                    <p class="respuesta">¡Claro que si! Tanto local como Nacional.</p>
-                </article>
-                <article>
-                    <p class="pregunta">¿Abren fines de semana?</p>
-                    <p class="respuesta">Solo Sábado de 10hs a 14hs.</p>
-                </article>
+                <div class="accordion accordion-flush" id="accordionFaqs">
+                    <article class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaUno" aria-expanded="false" aria-controls="preguntaUno">
+                                ¿Hacen envios?
+                            </button>
+                        </h3>
+                        <div id="preguntaUno" class="accordion-collapse collapse" data-bs-parent="#accordionFaqs">
+                            <div class="accordion-body">
+                                ¡Claro que si! Tanto local como Nacional.
+                            </div>
+                        </div>
+                    </article>
+                    <article class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaDos" aria-expanded="false" aria-controls="preguntaDos">
+                                ¿Abren fines de semana?
+                            </button>
+                        </h3>
+                        <div id="preguntaDos" class="accordion-collapse collapse" data-bs-parent="#accordionFaqs">
+                            <div class="accordion-body">
+                                Solo Sábado de 10hs a 14hs.
+                            </div>
+                        </div>
+                    </article>
+                </div>
                 <figure>
                     <img src="../imgs/faq.png" alt="Imagen de FAQs." class="imagen-decoracion">
                     <figcaption>Si hay alguna duda que no pudimos responder en esta página, no dudes en preguntarnos por nuestros medios habituales.</figcaption>
