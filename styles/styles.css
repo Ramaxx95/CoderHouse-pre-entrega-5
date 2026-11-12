@@ -87,11 +87,6 @@ figure{
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    grid-area: figure;
-}
-
-img{
-    grid-area: img;
 }
 
 .carousel.slide{
@@ -162,15 +157,6 @@ img{
 }
 
 /* FAQ */
-.pregunta{
-    font-weight: 700;
-    margin: 10px;
-}
-
-.respuesta{
-    margin: 0px 20px 20px;
-}
-
 .accordion-button{
     background-color: var(--color-secundario);
 }
